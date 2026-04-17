@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="600" viewBox="0 0 1920 600">
+  <!-- Fondo degradado -->
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#0D1117"/>
+      <stop offset="50%"  stop-color="#0F2744"/>
+      <stop offset="100%" stop-color="#0D1117"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="25%" cy="50%" r="40%">
+      <stop offset="0%" stop-color="#00B4D8" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#00B4D8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="75%" cy="50%" r="40%">
+      <stop offset="0%" stop-color="#48CAE4" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#48CAE4" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Gradientes bolillas -->
+    <radialGradient id="ball-r" cx="35%" cy="30%" r="65%"><stop offset="0%" stop-color="#ff8c42"/><stop offset="100%" stop-color="#c0392b"/></radialGradient>
+    <radialGradient id="ball-b" cx="35%" cy="30%" r="65%"><stop offset="0%" stop-color="#74b9ff"/><stop offset="100%" stop-color="#2980b9"/></radialGradient>
+    <radialGradient id="ball-g" cx="35%" cy="30%" r="65%"><stop offset="0%" stop-color="#55efc4"/><stop offset="100%" stop-color="#00b894"/></radialGradient>
+    <radialGradient id="ball-y" cx="35%" cy="30%" r="65%"><stop offset="0%" stop-color="#ffeaa7"/><stop offset="100%" stop-color="#f39c12"/></radialGradient>
+    <radialGradient id="ball-p" cx="35%" cy="30%" r="65%"><stop offset="0%" stop-color="#d7b4f8"/><stop offset="100%" stop-color="#8e44ad"/></radialGradient>
+  </defs>
+
+  <!-- Fondo -->
+  <rect width="1920" height="600" fill="url(#bg)"/>
+  <rect width="1920" height="600" fill="url(#glow1)"/>
+  <rect width="1920" height="600" fill="url(#glow2)"/>
+
+  <!-- Línea decorativa superior -->
+  <rect x="0" y="0" width="1920" height="4" fill="url(#ball-b)" opacity="0.6"/>
+
+  <!-- Bolillas decorativas izquierda -->
+  <circle cx="120" cy="300" r="85" fill="url(#ball-r)" opacity="0.9"/>
+  <circle cx="120" cy="270" r="26" fill="white" fill-opacity="0.25"/>
+  <text x="120" y="320" text-anchor="middle" fill="white" font-family="Arial Black,Arial" font-size="70" font-weight="900">7</text>
+
+  <circle cx="270" cy="310" r="72" fill="url(#ball-b)" opacity="0.85"/>
+  <circle cx="270" cy="283" r="22" fill="white" fill-opacity="0.2"/>
+  <text x="270" y="328" text-anchor="middle" fill="white" font-family="Arial Black,Arial" font-size="58" font-weight="900">42</text>
+
+  <circle cx="400" cy="295" r="60" fill="url(#ball-g)" opacity="0.8"/>
+  <text x="400" y="313" text-anchor="middle" fill="white" font-family="Arial Black,Arial" font-size="48" font-weight="900">15</text>
+
+  <!-- Texto central -->
+  <text x="960" y="230" text-anchor="middle" fill="#8B949E" font-family="Poppins,Arial" font-size="22" font-weight="400" letter-spacing="6">LOTERÍA DE SALTA</text>
+  <text x="960" y="340" text-anchor="middle" fill="#E6EDF3" font-family="Arial Black,Arial" font-size="88" font-weight="900" letter-spacing="-2">QUINIELA</text>
+  <text x="960" y="410" text-anchor="middle" fill="#00B4D8" font-family="Poppins,Arial" font-size="28" font-weight="500" letter-spacing="2">Resultados · Sorteos · Análisis</text>
+
+  <!-- Línea divisoria decorativa -->
+  <rect x="760" y="450" width="400" height="2" fill="#00B4D8" opacity="0.4" rx="1"/>
+
+  <!-- Bolillas decorativas derecha -->
+  <circle cx="1520" cy="300" r="85" fill="url(#ball-y)" opacity="0.9"/>
+  <circle cx="1520" cy="270" r="26" fill="white" fill-opacity="0.25"/>
+  <text x="1520" y="320" text-anchor="middle" fill="#333" font-family="Arial Black,Arial" font-size="70" font-weight="900">88</text>
+
+  <circle cx="1665" cy="310" r="72" fill="url(#ball-p)" opacity="0.85"/>
+  <circle cx="1665" cy="283" r="22" fill="white" fill-opacity="0.2"/>
+  <text x="1665" y="328" text-anchor="middle" fill="white" font-family="Arial Black,Arial" font-size="58" font-weight="900">33</text>
+
+  <circle cx="1800" cy="295" r="60" fill="url(#ball-r)" opacity="0.8"/>
+  <text x="1800" y="313" text-anchor="middle" fill="white" font-family="Arial Black,Arial" font-size="48" font-weight="900">21</text>
+
+  <!-- Línea decorativa inferior -->
+  <rect x="0" y="596" width="1920" height="4" fill="url(#ball-b)" opacity="0.6"/>
+</svg>

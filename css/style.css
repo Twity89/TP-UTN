@@ -1,0 +1,228 @@
+/* ================================================
+   style.css — Variables compartidas, reset y base
+   ================================================ */
+
+/* Variables de diseño */
+:root {
+  --dark:      #0D1117;
+  --primary:   #161B22;
+  --accent:    #00B4D8;
+  --accent2:   #48CAE4;
+  --text:      #E6EDF3;
+  --muted:     #8B949E;
+  --white:     #FFFFFF;
+  --border:    rgba(255, 255, 255, 0.08);
+  --card-bg:   #1C2128;
+
+  --font-head: 'Space Grotesk', sans-serif;
+  --font-body: 'Poppins', sans-serif;
+
+  --radius:    12px;
+  --shadow:    0 4px 24px rgba(0, 0, 0, 0.4);
+  --transition: 0.3s ease;
+}
+
+/* Reset base */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px; /* compensa navbar fija */
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--dark);
+  color: var(--text);
+  line-height: 1.7;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ── Navbar personalización (encima de Bootstrap) ── */
+#navbar {
+  background-color: transparent;
+  transition: background-color var(--transition), box-shadow var(--transition);
+  padding: 1rem 0;
+}
+
+#navbar.scrolled {
+  background-color: rgba(13, 17, 23, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+  padding: 0.5rem 0;
+}
+
+.navbar-brand {
+  font-family: var(--font-head);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--accent) !important;
+  letter-spacing: 1px;
+}
+
+.navbar-brand i {
+  margin-right: 4px;
+}
+
+.nav-link {
+  font-family: var(--font-body);
+  font-weight: 500;
+  color: var(--text) !important;
+  position: relative;
+  padding: 0.5rem 1rem !important;
+  transition: color var(--transition);
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 1rem;
+  right: 1rem;
+  height: 2px;
+  background: var(--accent);
+  transform: scaleX(0);
+  transition: transform var(--transition);
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--accent) !important;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+.nav-icon-toggle {
+  color: var(--text);
+  font-size: 1.5rem;
+}
+
+.navbar-toggler {
+  border: none;
+  background: none;
+  box-shadow: none !important;
+}
+
+/* ── Encabezado compartido de secciones ── */
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  font-family: var(--font-head);
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 700;
+  color: var(--white);
+  letter-spacing: -0.5px;
+}
+
+.section-subtitle {
+  color: var(--muted);
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.section-divider {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
+  margin: 1rem auto 0;
+  border-radius: 2px;
+}
+
+/* ── Footer ── */
+#footer {
+  background-color: var(--primary);
+  border-top: 1px solid var(--border);
+  padding: 2.5rem 0;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.footer-brand {
+  font-family: var(--font-head);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-role {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.footer-social {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-social a {
+  color: var(--muted);
+  font-size: 1.3rem;
+  transition: color var(--transition);
+}
+
+.footer-social a:hover {
+  color: var(--accent);
+}
+
+.footer-copy {
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+/* ── Media queries compartidas ── */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  html {
+    scroll-padding-top: 65px;
+  }
+}
+
+/* Móvil grande */
+@media (max-width: 768px) {
+  .section-header {
+    margin-bottom: 2rem;
+  }
+}
+
+/* Móvil pequeño */
+@media (max-width: 360px) {
+  body {
+    font-size: 14px;
+  }
+}

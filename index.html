@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agustín Folco — Soluciones Digitales</title>
+
+  <!-- Google Fonts: Space Grotesk + Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Bootstrap CSS (componente: navbar) -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Bootstrap Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+  />
+
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/home.css" />
+  <link rel="stylesheet" href="css/cards.css" />
+  <link rel="stylesheet" href="css/galeria.css" />
+  <link rel="stylesheet" href="css/contacto.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER — Componente Bootstrap: Navbar ===== -->
+  <header id="header">
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+      <div class="container">
+        <a class="navbar-brand" href="#home">
+          <i class="bi bi-code-slash"></i> AF
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+          aria-controls="navMenu"
+          aria-expanded="false"
+          aria-label="Abrir menú"
+        >
+          <i class="bi bi-list nav-icon-toggle"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== SECCIÓN 1: HOME ===== -->
+    <section id="home" class="home-section">
+      <!-- Imagen principal: ocupa 100% ancho y ~40% del alto de pantalla -->
+      <img src="img/imagen-ancha.svg" alt="Lotería de Salta — Quiniela" class="home-hero-img" />
+      <div class="home-overlay">
+        <div class="home-content">
+          <!-- Columna de texto -->
+          <div class="home-text">
+            <p class="home-greeting">Hola, soy</p>
+            <h1 class="home-name">Agustín Folco</h1>
+            <h2 class="home-role">
+              <span class="role-accent">Encargado de Soluciones Digitales</span>
+            </h2>
+            <p class="home-desc">
+              Transformo procesos en experiencias digitales eficientes.
+              Trabajo en <strong>Lotería de Salta</strong> desarrollando
+              sistemas que mejoran la gestión y la experiencia del usuario.
+            </p>
+            <div class="home-badges">
+              <span class="badge-tech"><i class="bi bi-globe2"></i> Desarrollo Web</span>
+              <span class="badge-tech"><i class="bi bi-bar-chart-line"></i> Analítica</span>
+              <span class="badge-tech"><i class="bi bi-gear-fill"></i> Automatización</span>
+            </div>
+            <a href="#proyectos" class="btn-cta">
+              Ver mis proyectos <i class="bi bi-arrow-down-circle"></i>
+            </a>
+          </div>
+          <!-- Avatar -->
+          <div class="home-avatar">
+            <img
+              src="img/fotomia.jpeg"
+              alt="Foto de perfil de Agustín Folco"
+              class="avatar-img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECCIÓN 2: PROYECTOS (CARDS) ===== -->
+    <section id="proyectos" class="cards-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Mis Proyectos</h2>
+          <p class="section-subtitle">Soluciones que desarrollé para modernizar procesos en Lotería de Salta</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="cards-grid">
+
+          <!-- Card 1 -->
+          <article class="project-card" id="card-sorteos">
+            <div class="card-img-wrap">
+              <img
+                src="img/loteria1.png"
+                alt="Dashboard de resultados de quiniela"
+              />
+              <div class="card-img-overlay">
+                <span class="card-category">Analytics</span>
+              </div>
+            </div>
+            <div class="card-body-custom">
+              <h3 class="card-title-custom">Dashboard de Resultados Quiniela</h3>
+              <p class="card-desc">
+                Tablero interactivo en Power BI con resultados históricos y en tiempo real
+                de la Quiniela de Salta, con filtros por fecha y turno.
+              </p>
+              <div class="card-tags">
+                <span class="tag">Power BI</span>
+                <span class="tag">Python</span>
+              </div>
+              <a href="#contacto" class="card-btn-custom">
+                Ver más <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="project-card" id="card-reportes">
+            <div class="card-img-wrap">
+              <img
+                src="img/loteria2.png"
+                alt="Automatización de reportes de sorteos"
+              />
+              <div class="card-img-overlay">
+                <span class="card-category">Automatización</span>
+              </div>
+            </div>
+            <div class="card-body-custom">
+              <h3 class="card-title-custom">Reportes Automáticos de Sorteos</h3>
+              <p class="card-desc">
+                Flujo automatizado que genera y distribuye reportes de sorteos y tómbola
+                por correo a distintas áreas de Lotería de Salta.
+              </p>
+              <div class="card-tags">
+                <span class="tag">n8n</span>
+                <span class="tag">Python</span>
+              </div>
+              <a href="#contacto" class="card-btn-custom">
+                Ver más <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="project-card" id="card-ventas">
+            <div class="card-img-wrap">
+              <img
+                src="img/loteria3.png"
+                alt="Análisis de ventas de lotería"
+              />
+              <div class="card-img-overlay">
+                <span class="card-category">Analytics</span>
+              </div>
+            </div>
+            <div class="card-body-custom">
+              <h3 class="card-title-custom">Análisis de Ventas por Agencia</h3>
+              <p class="card-desc">
+                Informe en Power BI que muestra el rendimiento de cada agencia de lotería,
+                con métricas de recaudación y comparativos mensuales.
+              </p>
+              <div class="card-tags">
+                <span class="tag">Power BI</span>
+                <span class="tag">Python</span>
+              </div>
+              <a href="#contacto" class="card-btn-custom">
+                Ver más <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="project-card" id="card-automatizacion">
+            <div class="card-img-wrap">
+              <img
+                src="img/loteria4.png"
+                alt="Automatización de procesos administrativos"
+              />
+              <div class="card-img-overlay">
+                <span class="card-category">Automatización</span>
+              </div>
+            </div>
+            <div class="card-body-custom">
+              <h3 class="card-title-custom">Automatización de Procesos Internos</h3>
+              <p class="card-desc">
+                Integración de flujos administrativos de Lotería de Salta usando
+                Power Automate y n8n para reducir tareas manuales repetitivas.
+              </p>
+              <div class="card-tags">
+                <span class="tag">Power Automate</span>
+                <span class="tag">n8n</span>
+              </div>
+              <a href="#contacto" class="card-btn-custom">
+                Ver más <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECCIÓN 3: GALERÍA ===== -->
+    <section id="galeria" class="galeria-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Galería</h2>
+          <p class="section-subtitle">Capturas y momentos de mi trabajo en soluciones digitales</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="galeria-grid">
+          <div class="galeria-item">
+            <img src="img/galeria1.png" alt="Lotería de Salta" />
+            <div class="galeria-overlay"><span>Lotería de Salta</span></div>
+          </div>
+          <div class="galeria-item">
+            <img src="img/galeria2.png" alt="Sorteo quiniela" />
+            <div class="galeria-overlay"><span>Sorteo Quiniela</span></div>
+          </div>
+          <div class="galeria-item">
+            <img src="img/bolillas1.svg" alt="Bolillas de quiniela" />
+            <div class="galeria-overlay"><span>Bolillas</span></div>
+          </div>
+          <div class="galeria-item">
+            <img src="img/bolillas2.svg" alt="Números ganadores" />
+            <div class="galeria-overlay"><span>Números Ganadores</span></div>
+          </div>
+          <div class="galeria-item">
+            <img src="img/bolillas3.svg" alt="Tómbola de sorteo" />
+            <div class="galeria-overlay"><span>Tómbola</span></div>
+          </div>
+          <div class="galeria-item">
+            <img src="img/bolillas4.svg" alt="Premios quiniela" />
+            <div class="galeria-overlay"><span>Premios</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECCIÓN 4: CONTACTO ===== -->
+    <section id="contacto" class="contacto-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Contacto</h2>
+          <p class="section-subtitle">¿Tenés un proyecto en mente? ¡Hablemos!</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="contacto-wrapper">
+
+          <!-- Info de contacto -->
+          <div class="contacto-info">
+            <h3 class="info-title">Encontrame aquí</h3>
+            <ul class="info-list">
+              <li>
+                <i class="bi bi-geo-alt-fill"></i>
+                <span>Salta, Argentina</span>
+              </li>
+              <li>
+                <i class="bi bi-building"></i>
+                <span>Lotería de Salta</span>
+              </li>
+              <li>
+                <i class="bi bi-envelope-fill"></i>
+                <span>agustin.folco@lotedesalta.gob.ar</span>
+              </li>
+              <li>
+                <i class="bi bi-telephone-fill"></i>
+                <span>+54 387 000-0000</span>
+              </li>
+              <li>
+                <i class="bi bi-clock-fill"></i>
+                <span>Lun–Vie: 8:00 — 17:00</span>
+              </li>
+            </ul>
+            <div class="info-social">
+              <a href="#" aria-label="LinkedIn" class="social-link"><i class="bi bi-linkedin"></i></a>
+              <a href="#" aria-label="GitHub" class="social-link"><i class="bi bi-github"></i></a>
+              <a href="#" aria-label="Instagram" class="social-link"><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+
+          <!-- Formulario -->
+          <form class="contacto-form" id="contactForm" novalidate>
+
+            <div class="form-row">
+              <!-- Campo 1: Nombre -->
+              <div class="form-group">
+                <label for="nombre">Nombre completo <span class="required">*</span></label>
+                <input
+                  type="text"
+                  id="nombre"
+                  name="nombre"
+                  placeholder="Tu nombre y apellido"
+                  required
+                />
+              </div>
+
+              <!-- Campo 2: Email -->
+              <div class="form-group">
+                <label for="email">Correo electrónico <span class="required">*</span></label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="tu@email.com"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <!-- Campo 3: Teléfono -->
+              <div class="form-group">
+                <label for="telefono">Teléfono</label>
+                <input
+                  type="tel"
+                  id="telefono"
+                  name="telefono"
+                  placeholder="+54 387 000-0000"
+                />
+              </div>
+
+              <!-- Campo 4: Asunto (select) -->
+              <div class="form-group">
+                <label for="asunto">Asunto <span class="required">*</span></label>
+                <select id="asunto" name="asunto" required>
+                  <option value="">Seleccioná un asunto…</option>
+                  <option value="consulta">Consulta general</option>
+                  <option value="proyecto">Propuesta de proyecto</option>
+                  <option value="colaboracion">Colaboración</option>
+                  <option value="otro">Otro</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Campo 5: Disponibilidad (radio) -->
+            <div class="form-group">
+              <label class="label-group">Disponibilidad para iniciar</label>
+              <div class="radio-group">
+                <label class="radio-label">
+                  <input type="radio" name="disponibilidad" value="inmediata" />
+                  Inmediata
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="disponibilidad" value="un-mes" />
+                  En 1 mes
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="disponibilidad" value="mas-adelante" />
+                  Más adelante
+                </label>
+              </div>
+            </div>
+
+            <!-- Campo 6: Intereses (checkbox) -->
+            <div class="form-group">
+              <label class="label-group">Áreas de interés</label>
+              <div class="checkbox-group">
+                <label class="checkbox-label">
+                  <input type="checkbox" name="interes" value="web" />
+                  Desarrollo Web
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="interes" value="apps" />
+                  Aplicaciones
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="interes" value="automatizacion" />
+                  Automatización
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="interes" value="data" />
+                  Analítica / Data
+                </label>
+              </div>
+            </div>
+
+            <!-- Campo 7: Mensaje (textarea) -->
+            <div class="form-group">
+              <label for="comentario">Mensaje <span class="required">*</span></label>
+              <textarea
+                id="comentario"
+                name="comentario"
+                rows="5"
+                placeholder="Contame sobre tu proyecto o consulta…"
+                required
+              ></textarea>
+            </div>
+
+            <!-- Botones -->
+            <div class="form-buttons">
+              <button type="submit" class="btn-submit">
+                <i class="bi bi-send-fill"></i> Enviar mensaje
+              </button>
+              <button type="reset" class="btn-reset">
+                <i class="bi bi-arrow-counterclockwise"></i> Limpiar
+              </button>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <i class="bi bi-code-slash"></i>
+          <span>Agustín Folco</span>
+        </div>
+        <p class="footer-role">Encargado de Soluciones Digitales · Lotería de Salta</p>
+        <div class="footer-social">
+          <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="#" aria-label="GitHub"><i class="bi bi-github"></i></a>
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        </div>
+        <p class="footer-copy">
+          © <span id="year"></span> Agustín Folco. Todos los derechos reservados.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- JS propio -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
